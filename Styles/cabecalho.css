@@ -1,0 +1,27 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    padding: 2rem 1.2rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.cabecalho__conteudo{
+    margin-left: 1rem;
+}
+
+.cabecalho__titulo{
+    font-size: 22px;
+    color: var(--preto-titulos);
+}
+
+.cabecalho__texto{
+    font-size: 14px;
+    color: var(--cinza-subtitulo);
+    margin-top: 0.6rem;
+}
+
+.cabecalho__imagem{
+    height: 3.5rem;
+    width: 3.5rem;
+}

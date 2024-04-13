@@ -1,0 +1,150 @@
+.lista{
+    position: relative;
+    padding: 0 1.2rem;
+    margin-bottom: 2rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.lista-remota, .lista-presencial{
+    background-color: var(--branco);
+    border-radius: 8px;
+    padding: 1rem 0 0.1rem 0;
+    margin-bottom: 1rem;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.7rem 0.9rem 0.7rem;
+}
+
+.conteudo__paciente{
+    display: flex;
+}
+
+.lista__data{
+    margin-bottom: 1rem;
+}
+
+.conteudo-escrito{
+    padding-left: 1rem;
+}
+
+.conteudo__link:hover{
+    opacity: 70%;
+}
+
+.nome-paciente{
+    font-size: 14px;
+}
+
+.consulta-remota{
+    font-size: 12px;
+    background: url("../Assets/icone-camera.svg")no-repeat;
+    background-position: left;
+    padding-left: 1.3rem;
+    margin-top: 0.5rem;
+    color: var(--cinza-subtitulo);
+}
+
+.horario{
+    font-size: 12px;
+    padding: 0.6rem 0;
+    font-weight: 500;
+}
+
+.opcoes{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.opcao__video, .opcao__audio{
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.9rem 0.7rem;
+    font-weight: 500;
+}
+
+.opcao__video{
+    color: var(--branco);
+    background-color: var(--laranja);
+    border: 1px solid var(--laranja);
+}
+
+.opcao__video:hover{
+    background-color: var(--laranja-hover);
+}
+
+.opcao__audio{
+    border: 2px solid var(--cor-de-fundo);
+}
+
+.opcao__audio:hover{
+    background-color: var(--cor-de-fundo);
+}
+
+.agendar-horario{
+    padding: 0 0.7rem;
+    border-top: 2px solid var(--cor-de-fundo);
+}
+
+.consulta-presencial{
+    font-size: 12px;
+    background: url("../Assets/icone-localizacao.svg")no-repeat;
+    background-size: 11px;
+    padding-left: 1.3rem;
+    margin-top: 0.5rem;
+    color: var(--cinza-subtitulo);
+}
+
+.opcao__endereco{
+    color: var(--branco);
+    background-color: var(--azul-botao);
+    border: 1px solid var(--azul-botao);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.9rem 0.7rem;
+    width: 100vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+.opcao__endereco:hover{
+    background-color: var(--azul-botao-hover);
+}
+
+
+@media screen and (min-width: 768px){
+    .lista{
+        width: 100%;
+        padding: 0 1.2rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .lista__cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .lista-remota, .lista-presencial{
+        width: 47%;
+    }
+}
+
+@media screen and (min-width: 1366px){
+    .lista-remota, .lista-presencial{
+        width: 30%;
+    }
+
+    .lista__cards{
+        gap: 3rem;
+    }
+}
